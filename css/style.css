@@ -1,0 +1,129 @@
+body {
+  font-family: monospace;
+  background-color: #F6F7F2;
+  font-size: 16px;
+}
+
+.footer {
+  height: 50px;
+}
+
+#likes i {
+  background-image: url('../images/green-heart.png');
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background-size: cover;
+}
+
+#dislikes i {
+  background-image: url('../images/red-heart.jpg');
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.seperator {
+  border-bottom: solid #ffffff;
+}
+
+.vertical--seperator {
+  border-right: solid #ffffff 2px;
+}
+
+.goot-at--height--one {
+  height: 240px;
+}
+
+.goot-at--height--two {
+  height: 80px;
+  margin-top: 10px;
+}
+
+.goot-at--height--three {
+  height: 60px;
+  margin-top: 10px;
+}
+
+.bg-offset-white {
+  background-color: #eee;
+}
+
+.bg-flat-blue {
+  background-color: #3D8EB9;
+  color: #FEFEFE;
+}
+
+.bg-flat-dark-blue {
+  background-color: #00587A;
+}
+
+.reach-me {
+  height: 100px;
+}
+
+.reach-me:hover {
+  height: 120px;
+}
+
+.gmail {
+  height: 20px;
+}
+
+h1, h3, h4, h5 {
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.my-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  border: solid 10px;
+}
+
+.about-me {
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+
+.navigator--padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.block-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.height--175 {
+  height: 175px;
+}
+
+/*padding and marginclasses*/
+.no--margin {
+  margin: 0;
+}
+.padding--top--10 {
+  padding-top: 10px;
+}
+
+.padding--top--20 {
+  padding-top: 20px;
+}
+
+
+/*color classes*/
+.color--red {
+  color: red;
+}
+
+.color--green {
+  color: green;
+}
