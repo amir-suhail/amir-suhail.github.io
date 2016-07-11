@@ -4,8 +4,37 @@ body {
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #eee;
+}
+
 .footer {
   height: 50px;
+}
+
+.fixed-header {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+.active {
+  background-color: #F6F7F2;
+  color: #000;
+}
+
+.active a {
+  color: #000;
+}
+
+.active-about {
+  background-color: #3D8EB9;
 }
 
 #likes i {
@@ -57,14 +86,11 @@ body {
 
 .bg-flat-dark-blue {
   background-color: #00587A;
+  color: #FEFEFE;
 }
 
 .reach-me {
   height: 100px;
-}
-
-.reach-me:hover {
-  height: 120px;
 }
 
 .gmail {
@@ -83,8 +109,12 @@ h2 {
 .my-img {
   height: 200px;
   width: 200px;
+  background-size: 385px;
+  display: inline-block;
+  background-position-x: -128px;
   border-radius: 100%;
   border: solid 10px;
+  background-image: url('../images/IMG_3319.JPG');
 }
 
 .about-me {
@@ -109,6 +139,14 @@ h2 {
 /*padding and marginclasses*/
 .no--margin {
   margin: 0;
+}
+
+.margin--bottom--50 {
+  margin-bottom: 50px;
+}
+
+.margin--top--50 {
+  margin-top: 50px;
 }
 .padding--top--10 {
   padding-top: 10px;

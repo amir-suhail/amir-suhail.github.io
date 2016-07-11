@@ -7,24 +7,34 @@
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-  <div class="col-xs-12 bg-flat-blue text-center">
+  <div class="col-xs-12 bg-flat-blue text-center" id="aboutBlock">
     <div class="row about-me">
-      <img src="images/IMG_3854.JPG" class="my-img"/>
+      <span class="my-img"></span>
       <h1>Hi I'm Amir Suhail</h1>
       <h3>Web Developer</h3>
-      <p class="no--margin">Basically an Indain who loves to code design and eat.</p>
-      <p class="no--margin">To know more scorl down.</p>
-    </div>
-    <div class="row bg-flat-dark-blue">
-      <span class="col-md-offset-1 col-md-2 navigator--padding">About me</span>
-      <span class="col-md-2 navigator--padding">What I'm good at</span>
-      <span class="col-md-2 navigator--padding">What I have done</span>
-      <span class="col-md-2 navigator--padding">My likes & dislikes</span>
-      <span class="col-md-2 navigator--padding">Reach me</span>
+      <p class="no--margin">Basically an Indain who loves to code, design and eat.</p>
+      <p class="no--margin">To know more scorll down.</p>
     </div>
   </div>
+  <div class="col-xs-12 bg-flat-dark-blue text-center" id="navigator">
+    <span class="col-md-2 navigator--padding active-about">
+      <a href="#aboutBlock">About me</a>
+    </span>
+    <span class="col-md-3 navigator--padding">
+      <a  href="#goodAtBlock">What I'm good at</a>
+    </span>
+    <span class="col-md-2 navigator--padding">
+      <a  href="#doneBlock">What I have done</a>
+    </span>
+    <span class="col-md-3 navigator--padding">
+      <a  href="#likeBlock">My likes & dislikes</a>
+    </span>
+    <span class="col-md-2 navigator--padding">
+      <a  href="#reachBlock">Reach me</a>
+    </span>
+  </div>
 
-  <div class="col-xs-12 block-padding seperator">
+  <div class="col-xs-12 block-padding seperator" id="goodAtBlock">
     <h2>What I'm good at:</h2>
     <!-- goot at one starts -->
     <div class="col-xs-6 col-sm-3 text-center">
@@ -78,7 +88,7 @@
     <!-- goot at three ends -->
   </div>
 
-  <div class="col-xs-12 block-padding seperator">
+  <div class="col-xs-12 block-padding seperator" id="doneBlock">
     <h2>What I have done:</h2>
     <div class="col-xs-12 col-sm-6 text-center">
       <h3>Responsive Web Designing</h3>
@@ -86,7 +96,7 @@
         <img src="images/Responsive.png" class="height--175"/>
       </span>
       <p>
-        I have developed many responsive web appilcations and Single Page
+        I have developed many responsive web applications and Single Page
         Applications and have a keen knowledge on how to handle web pages in
         different device and a good sense of responsive designing.
       </p>
@@ -103,7 +113,7 @@
     </div>
   </div>
 
-  <div class="col-xs-12 block-padding seperator">
+  <div class="col-xs-12 block-padding seperator" id="likeBlock">
     <h2>My likes & dislikes:</h2>
     <div class="col-xs-12">
       <div class="col-xs-6 text-right  color--green vertical--seperator"
@@ -129,7 +139,7 @@
     </div>
   </div>
 
-  <div class="col-xs-12 block-padding">
+  <div class="col-xs-12 block-padding" id="reachBlock">
     <h2>Reach me:</h2>
     <div class="col-xs-6 col-sm-3 text-center">
       <img class="reach-me" src="images/facebook.png">
@@ -143,13 +153,13 @@
     <div class="col-xs-6 col-sm-3 text-center">
       <img class="reach-me" src="images/twitter.png">
     </div>
-    <div class="col-xs-12 text-center padding--top--20">
+    <div class="col-xs-12 text-center padding--top--20 margin--top--50">
       <img class="gmail" src="images/Gmail.png">
       <strong>aspersonal48@gmail.com</strong>
     </div>
   </div>
   <div class="col-xs-12 footer bg-flat-dark-blue">
   </div>
-  <script src="js/script.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
