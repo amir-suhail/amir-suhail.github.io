@@ -53,6 +53,10 @@ a:hover {
   background-size: cover;
 }
 
+#headerText {
+  padding-top: 10px;
+}
+
 .seperator {
   border-bottom: solid #ffffff;
 }
@@ -61,16 +65,16 @@ a:hover {
   border-right: solid #ffffff 2px;
 }
 
-.goot-at--height--one {
+.good-at--height--one {
   height: 240px;
 }
 
-.goot-at--height--two {
+.good-at--height--two {
   height: 80px;
   margin-top: 10px;
 }
 
-.goot-at--height--three {
+.good-at--height--three {
   height: 60px;
   margin-top: 10px;
 }
@@ -109,17 +113,22 @@ h2 {
 .my-img {
   height: 200px;
   width: 200px;
-  background-size: 385px;
   display: inline-block;
-  background-position-x: -128px;
   border-radius: 100%;
   border: solid 10px;
-  background-image: url('../images/IMG_3319.JPG');
+  background-image: url('../images/myImg.png');
+  background-size: cover;
 }
 
 .about-me {
   margin-top: 30px;
   margin-bottom: 45px;
+}
+
+.show-mobile-navigator {
+  height: 8vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 .navigator--padding {
@@ -136,7 +145,7 @@ h2 {
   height: 175px;
 }
 
-/*padding and marginclasses*/
+/*padding and margin classes*/
 .no--margin {
   margin: 0;
 }
@@ -164,4 +173,53 @@ h2 {
 
 .color--green {
   color: green;
+}
+
+/*overrides*/
+
+.glyphicon-menu-hamburger {
+  font-size: 4vh;
+}
+
+
+/* media query */
+@media only screen
+and (max-device-width : 1024px) {
+  body {
+    font-size: 28px;
+  }
+
+  h1 {
+    font-size: 42px
+  }
+
+  h2 {
+    font-size: 38px
+  }
+
+  h3 {
+    font-size: 34px
+  }
+
+  .about-me {
+    height: 65vh;
+    margin-top: 25vh;
+  }
+
+  .my-img {
+    height: 500px;
+    width: 500px;
+  }
+
+  .show-desktop-navigator {
+    display: none;
+  }
+
+}
+
+@media only screen
+and (min-device-width : 1025px) {
+  .show-mobile-navigator {
+    display: none;
+  }
 }
