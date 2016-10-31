@@ -39,16 +39,16 @@ a:hover {
 
 #likes i {
   background-image: url('../images/green-heart.png');
-  height: 20px;
-  width: 20px;
+  height: 19px;
+  width: 22px;
   display: inline-block;
   background-size: cover;
 }
 
 #dislikes i {
-  background-image: url('../images/red-heart.jpg');
+  background-image: url('../images/red-heart.png');
   height: 17px;
-  width: 17px;
+  width: 20px;
   display: inline-block;
   background-size: cover;
 }
@@ -65,18 +65,8 @@ a:hover {
   border-right: solid #ffffff 2px;
 }
 
-.good-at--height--one {
-  height: 240px;
-}
-
-.good-at--height--two {
-  height: 80px;
-  margin-top: 10px;
-}
-
-.good-at--height--three {
-  height: 60px;
-  margin-top: 10px;
+.good-at-image {
+  width: 100%
 }
 
 .bg-offset-white {
@@ -94,6 +84,7 @@ a:hover {
 }
 
 .reach-me {
+  margin-top: 20px;
   height: 100px;
 }
 
@@ -168,7 +159,7 @@ h2 {
   margin-top: 10px;
 }
 .margin--bottom--60 {
-  margin-bottom: 60px;
+  margin-bottom: 8vh;
 }
 
 .margin--top--50 {
@@ -234,6 +225,10 @@ and (max-device-width : 1024px) {
 
   .show-desktop-navigator {
     display: none;
+  }
+
+  .footer {
+    height: 8vh;
   }
 
 }
