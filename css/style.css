@@ -125,7 +125,7 @@ h2 {
 }
 
 .full-height-header {
-  height: 105vh;
+  height: 105vh !important;
 }
 
 .overflow-hidden {
@@ -191,7 +191,8 @@ h2 {
 
 /* media query */
 @media only screen
-and (max-device-width : 1024px) {
+and (max-device-width : 1024px)
+and (orientation: portrait) {
   body {
     font-size: 28px;
   }
@@ -238,4 +239,34 @@ and (min-device-width : 1025px) {
   .show-mobile-navigator {
     display: none;
   }
+}
+
+@media only screen
+and (max-device-width : 1024px)
+and (orientation: landscape) {
+  .show-desktop-navigator {
+    display: none;
+  }
+
+  .about-me {
+    height: 62vh;
+    margin-top: 20vh;
+  }
+
+  .show-mobile-navigator {
+    height: 10vh;
+  }
+
+  #headerText {
+    padding-top: 0;
+  }
+
+  .glyphicon-menu-hamburger {
+    font-size: 6vh;
+  }
+
+  .footer {
+    height: 10vh;
+  }
+
 }
