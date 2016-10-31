@@ -129,6 +129,20 @@ h2 {
   height: 8vh;
   padding-top: 2vh;
   padding-bottom: 2vh;
+  -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
+  transition: height 1s;
+}
+
+.full-height-header {
+  height: 105vh;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
 }
 
 .navigator--padding {
@@ -150,8 +164,11 @@ h2 {
   margin: 0;
 }
 
-.margin--bottom--50 {
-  margin-bottom: 50px;
+.margin--top--10 {
+  margin-top: 10px;
+}
+.margin--bottom--60 {
+  margin-bottom: 60px;
 }
 
 .margin--top--50 {
@@ -164,7 +181,6 @@ h2 {
 .padding--top--20 {
   padding-top: 20px;
 }
-
 
 /*color classes*/
 .color--red {
@@ -209,6 +225,11 @@ and (max-device-width : 1024px) {
   .my-img {
     height: 500px;
     width: 500px;
+  }
+
+  .reach-me {
+    margin-top: 30px;
+    height: 200px;
   }
 
   .show-desktop-navigator {

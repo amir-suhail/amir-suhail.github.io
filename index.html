@@ -35,8 +35,20 @@
         </span>
   </div>
   <div class="col-xs-12 bg-flat-dark-blue show-mobile-navigator" id="mobileHeader">
-    <i class="glyphicon glyphicon-menu-hamburger"></i>
+    <i class="glyphicon glyphicon-menu-hamburger" onclick="navigateTo()"></i>
     <h1 class="col-xs-8 pull-right" id="headerText"></h1>
+    <div class="hide padding--top--20" id="navigatorItems">
+      <hr>
+      <h3 onclick="navigateTo('#aboutBlock')">About me</h3>
+      <hr>
+      <h3 onclick="navigateTo('#goodAtBlock')">What I'm good at</h3>
+      <hr>
+      <h3 onclick="navigateTo('#doneBlock')">What I have done</h3>
+      <hr>
+      <h3 onclick="navigateTo('#likeBlock')">My likes & dislikes</h3>
+      <hr>
+      <h3 onclick="navigateTo('#reachBlock')">Reach me</h3>
+    </div>
   </div>
 
   <div class="col-xs-12 block-padding seperator" id="goodAtBlock">
@@ -125,14 +137,12 @@
            id="likes">
         <h3>Likes</h3>
         <p><i></i> <i></i> <i></i> People</p>
-        <p><i></i> <i></i> <i></i> <i></i> Humour</p>
         <p><i></i> <i></i> <i></i> <i></i> <i></i> Long drives</p>
         <p><i></i> <i></i> <i></i> <i></i> Travelling</p>
         <p><i></i> <i></i> <i></i> <i></i> Photograhpy</p>
         <p><i></i> <i></i> <i></i> <i></i> <i></i> Eating</p>
         <p><i></i> <i></i> <i></i> Cooking</p>
         <p><i></i> <i></i> <i></i> <i></i> <i></i> Football</p>
-        <p><i></i> <i></i> Mobile games</p>
       </div>
       <div class="col-xs-6 color--red" id="dislikes">
         <h3>Dislikes</h3>
@@ -145,18 +155,21 @@
 
   <div class="col-xs-12 block-padding" id="reachBlock">
     <h2>Reach me:</h2>
-    <div class="col-xs-6 col-sm-3 text-center">
+    <a href="https://www.facebook.com/aamir.suhail.581" class="col-xs-6 col-md-3 text-center">
       <img class="reach-me" src="images/facebook.png">
-    </div>
-    <div class="col-xs-6 col-sm-3 text-center">
+    </a>
+    <a class="col-xs-6 col-md-3 text-center"
+     href="https://www.linkedin.com/in/amir-suhail-722a4980">
       <img class="reach-me" src="images/linkedin.png">
-    </div>
-    <div class="col-xs-6 col-sm-3 text-center">
+    </a>
+    <a class="col-xs-6 col-md-3 text-center"
+     href="http://stackoverflow.com/users/5978281/amir-suhail">
       <img class="reach-me" src="images/stackoverflow.png">
-    </div>
-    <div class="col-xs-6 col-sm-3 text-center">
+    </a>
+    <a class="col-xs-6 col-md-3 text-center"
+     href="https://twitter.com/Aamir_suhail">
       <img class="reach-me" src="images/twitter.png">
-    </div>
+    </a>
     <div class="col-xs-12 text-center padding--top--20 margin--top--50">
       <img class="gmail" src="images/Gmail.png">
       <strong>aspersonal48@gmail.com</strong>
