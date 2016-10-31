@@ -3,7 +3,8 @@ var windowHeight;
 var isAboutMeHidden;
 var distanceToTop;
 var elementHeight;
-aboutBlockHeight = document.getElementById('aboutBlock').offsetHeight;
+var isSideMenuActive;
+aboutBlockHeight = document.getElementById('aboutBlock').offsetHeight - 5;
 var idArray = ["goodAtBlock", "doneBlock", "likeBlock", "reachBlock"];
 window.onscroll = function (e) {
   // 'use strict';
@@ -45,7 +46,7 @@ window.onscroll = function (e) {
 
 };
 function addHeader () {
-  document.getElementById("aboutBlock").classList.add("margin--bottom--50");
+  document.getElementById("aboutBlock").classList.add("margin--bottom--60");
   document.getElementById("navigator").classList.add("fixed-header");
   document.getElementById("mobileHeader").classList.add("fixed-header");
   document.getElementById("headerText").innerHTML = "Amir Suhail";
@@ -56,7 +57,7 @@ function addHeader () {
 function removeHeader () {
   document.getElementById("mobileHeader").classList.remove("fixed-header");
   document.getElementById("navigator").classList.remove("fixed-header");
-  document.getElementById("aboutBlock").classList.remove("margin--bottom--50");
+  document.getElementById("aboutBlock").classList.remove("margin--bottom--60");
   document.getElementById("headerText").innerHTML = "";
   removeActive();
   var selectedElem = document.getElementById("navigator").children[0];
@@ -76,4 +77,21 @@ function removeActive () {
       var selectedElem = document.getElementById("navigator").children[index + 1];
       selectedElem.classList.remove("active");
   });
+}
+
+function navigateTo(toHref) {
+  window.location.href = toHref || '#mobileHeader';
+  var mobileHeaderClasslist = document.getElementById('mobileHeader').classList;
+  var bodyClasslist = document.getElementsByTagName('body')[0].classList;
+  var navigatorItemsClasslist = document.getElementById('navigatorItems').classList;
+  isSideMenuActive = !isSideMenuActive;
+  if (isSideMenuActive) {
+    mobileHeaderClasslist.add('full-height-header');
+    bodyClasslist.add('overflow-hidden');
+    navigatorItemsClasslist.remove('hide');
+  } else {
+    navigatorItemsClasslist.add('hide');
+    mobileHeaderClasslist.remove('full-height-header');
+    bodyClasslist.remove('overflow-hidden');
+  }
 }
