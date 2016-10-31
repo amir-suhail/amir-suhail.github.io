@@ -1,13 +1,14 @@
-// var window = window;
+// 'use strict';
 var windowHeight;
 var isAboutMeHidden;
 var distanceToTop;
 var elementHeight;
 var isSideMenuActive;
-aboutBlockHeight = document.getElementById('aboutBlock').offsetHeight - 5;
+var aboutBlockHeight;
 var idArray = ["goodAtBlock", "doneBlock", "likeBlock", "reachBlock"];
+
 window.onscroll = function (e) {
-  // 'use strict';
+  aboutBlockHeight = document.getElementById('aboutBlock').offsetHeight - 5;
   windowHeight = window.scrollY;
   if (!isAboutMeHidden) {
     if(windowHeight >= aboutBlockHeight) {
