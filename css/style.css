@@ -1,7 +1,16 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
 body {
-  font-family: monospace;
-  background-color: #F6F7F2;
+  font-family: 'Montserrat', sans-serif ;
   font-size: 16px;
+  background-color: #fff;
+}
+
+.alternate-bg {
+    background-color: #eee;
 }
 
 a {
@@ -57,12 +66,8 @@ a:hover {
   padding-top: 10px;
 }
 
-.seperator {
-  border-bottom: solid #ffffff;
-}
-
 .vertical--seperator {
-  border-right: solid #ffffff 2px;
+  border-right: solid #ededed 2px;
 }
 
 .good-at-image {
@@ -102,18 +107,31 @@ h2 {
 }
 
 .my-img {
-  height: 200px;
-  width: 200px;
-  display: inline-block;
-  border-radius: 100%;
-  border: solid 10px;
-  background-image: url('../images/amir.png');
-  background-size: cover;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    border-radius: 100%;
+    border: solid 10px;
+    background-image: url(../images/IMG_8855.jpg);
+    background-size: 134%;
+    background-position: -32px;
+    background-repeat: no-repeat;
 }
 
 .about-me {
-  margin-top: 30px;
-  margin-bottom: 45px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me h1{
+    font-weight: 700;
+}
+
+.about-me h3 {
+    font-weight: 600;
 }
 
 .show-mobile-navigator {
@@ -143,8 +161,44 @@ h2 {
 
 .block-padding {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
+
+.block-padding h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.block-padding h3 {
+    margin-top: 1rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.summary {
+    text-align: center;
+    font-size: 1.35rem;
+    color: #93a4aa;
+}
+
+.good-at--title {
+    border-top: solid 1px #999;
+    padding: 10px;
+    border-radius: 14px;
+}
+
+.good-at--title__text {
+    font-size: 1.2rem;
+    position: absolute;
+    top: -15px;
+    left: 43%;
+    padding: 5px;
+    border: solid 1px #999;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
 
 .height--175 {
   height: 175px;
@@ -158,6 +212,14 @@ h2 {
 .margin--top--10 {
   margin-top: 10px;
 }
+
+.margin--top--30 {
+    margin-top: 30px;
+}
+
+.margin--bottom--20 {
+    margin-bottom: 20px;
+}
 .margin--bottom--60 {
   margin-bottom: 8vh;
 }
@@ -165,11 +227,11 @@ h2 {
 .margin--top--50 {
   margin-top: 50px;
 }
-.padding--top--10 {
+.padding-top--10 {
   padding-top: 10px;
 }
 
-.padding--top--20 {
+.padding-top--20 {
   padding-top: 20px;
 }
 
@@ -178,8 +240,178 @@ h2 {
   color: red;
 }
 
+.color--red p {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px;
+    justify-content: flex-start;
+}
+
+.color--red p i {
+    margin: 0 2px;
+}
+
 .color--green {
   color: green;
+}
+
+.color--green p {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px;
+    justify-content: flex-end;
+}
+
+.color--green p i {
+    margin: 0 2px;
+}
+
+.good-at-primary {
+    height: 15rem;
+    width: 100%;
+}
+
+.good-at-primary--angular {
+    background-image: url('../images/angularjs.png');
+    background-repeat: no-repeat;
+    background-position: -21px -20px;
+    width: 14rem;
+    background-size: 17.5rem;
+}
+
+.good-at-primary--html5 {
+    background-image: url(../images/html5.png);
+    background-repeat: no-repeat;
+    background-position: -3px 1px;
+    width: 14rem;
+    background-size: 14rem;
+}
+
+.good-at-primary--css3 {
+    background-image: url(../images/css3.png);
+    background-repeat: no-repeat;
+    background-position: -21px -16px;
+    width: 14rem;
+    background-size: 17.5rem;
+}
+
+.good-at-primary--sass {
+    background-image: url(../images/sass.png);
+    background-repeat: no-repeat;
+    background-position: -8px 0px;
+    width: 14rem;
+    background-size: 15rem;
+}
+
+.good-at-other--ionic {
+    background-image: url(../images/Ionic.png);
+    background-size: 160px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 50px 13px;
+}
+
+.good-at-other--bootstrap {
+    background-image: url(../images/bootstrap.png);
+    background-size: 210px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 7px 2px;
+}
+
+.good-at-other--jquery {
+    background-image: url(../images/jquery.png);
+    background-size: 200px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 10px 24px;
+}
+
+.good-at-other--nodejs {
+    background-image: url(../images/nodejs.png);
+    background-size: 210px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 10px -13px;
+}
+
+.good-at-other--npm {
+    background-image: url(../images/npm.png);
+    background-size: 135px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 40px 26px;
+}
+
+.good-at-other--cordova {
+    background-image: url(../images/Cordova.png);
+    background-size: 210px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: -8px 17px;
+}
+
+.good-at-other--protractor {
+    background-image: url(../images/protractor.png);
+    background-size: 205px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 13px 20px;
+}
+
+.good-at-other--karma {
+    background-image: url(../images/karma.png);
+    background-size: 175px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 35px 19px;
+}
+
+.good-at-other--jasmine {
+    background-image: url(../images/jasmine.svg);
+    background-size: 210px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 7px 12px;
+}
+
+.good-at-other--grunt {
+    background-image: url(../images/grunt.png);
+    background-size: 160px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 30px 12px;
+}
+
+.good-at-other--grunt {
+    background-image: url(../images/grunt.png);
+    background-size: 160px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 30px 12px;
+}
+
+.good-at-other--gulp {
+    background-image: url(../images/gulp.png);
+    background-size: 200px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 9px 8px;
+}
+
+.good-at-other--compass {
+    background-image: url(../images/compass.png);
+    background-size: 185px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 7px -4px;
+}
+
+.center-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*overrides*/
@@ -210,8 +442,7 @@ and (orientation: portrait) {
   }
 
   .about-me {
-    height: 65vh;
-    margin-top: 25vh;
+    height: 92vh;
   }
 
   .my-img {
@@ -249,8 +480,7 @@ and (orientation: landscape) {
   }
 
   .about-me {
-    height: 62vh;
-    margin-top: 20vh;
+    height: 90vh;
   }
 
   .show-mobile-navigator {
