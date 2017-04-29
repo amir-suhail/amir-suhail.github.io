@@ -167,6 +167,36 @@ h2 {
     font-weight: 700;
 }
 
+.block-padding h3 {
+    margin-top: 1rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.summary {
+    text-align: center;
+    font-size: 1.35rem;
+    color: #93a4aa;
+}
+
+.good-at--title {
+    border-top: solid 1px #999;
+    padding: 10px;
+    border-radius: 14px;
+}
+
+.good-at--title__text {
+    font-size: 1.2rem;
+    position: absolute;
+    top: -15px;
+    left: 43%;
+    padding: 5px;
+    border: solid 1px #999;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+
 .height--175 {
   height: 175px;
 }
@@ -179,6 +209,10 @@ h2 {
 .margin--top--10 {
   margin-top: 10px;
 }
+
+.margin--top--30 {
+    margin-top: 30px;
+}
 .margin--bottom--60 {
   margin-bottom: 8vh;
 }
@@ -186,11 +220,11 @@ h2 {
 .margin--top--50 {
   margin-top: 50px;
 }
-.padding--top--10 {
+.padding-top--10 {
   padding-top: 10px;
 }
 
-.padding--top--20 {
+.padding-top--20 {
   padding-top: 20px;
 }
 
@@ -238,6 +272,110 @@ h2 {
     background-position: -8px 0px;
     width: 14rem;
     background-size: 15rem;
+}
+
+.good-at-other--ionic {
+    background-image: url(../images/Ionic.png);
+    background-size: 160px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 50px 13px;
+}
+
+.good-at-other--bootstrap {
+    background-image: url(../images/bootstrap.png);
+    background-size: 210px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 7px 2px;
+}
+
+.good-at-other--jquery {
+    background-image: url(../images/jquery.png);
+    background-size: 200px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 10px 24px;
+}
+
+.good-at-other--nodejs {
+    background-image: url(../images/nodejs.png);
+    background-size: 210px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 10px -13px;
+}
+
+.good-at-other--npm {
+    background-image: url(../images/npm.png);
+    background-size: 135px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 40px 26px;
+}
+
+.good-at-other--cordova {
+    background-image: url(../images/Cordova.png);
+    background-size: 210px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: -8px 17px;
+}
+
+.good-at-other--protractor {
+    background-image: url(../images/protractor.png);
+    background-size: 205px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 13px 20px;
+}
+
+.good-at-other--karma {
+    background-image: url(../images/karma.png);
+    background-size: 175px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 35px 19px;
+}
+
+.good-at-other--jasmine {
+    background-image: url(../images/jasmine.svg);
+    background-size: 210px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 7px 12px;
+}
+
+.good-at-other--grunt {
+    background-image: url(../images/grunt.png);
+    background-size: 160px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 30px 12px;
+}
+
+.good-at-other--grunt {
+    background-image: url(../images/grunt.png);
+    background-size: 160px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 30px 12px;
+}
+
+.good-at-other--gulp {
+    background-image: url(../images/gulp.png);
+    background-size: 200px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 9px 8px;
+}
+
+.good-at-other--compass {
+    background-image: url(../images/compass.png);
+    background-size: 185px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 7px -4px;
 }
 
 .center-box {
