@@ -112,7 +112,7 @@ h2 {
     display: inline-block;
     border-radius: 100%;
     border: solid 10px;
-    background-image: url(../images/amir.jpg);
+    background-image: url('../images/amir.JPG');
     background-size: 134%;
     background-position: -32px;
     background-repeat: no-repeat;
@@ -320,7 +320,7 @@ h2 {
 }
 
 .good-at-other--jquery {
-    background-image: url(../images/jquery.png);
+    background-image: url('../images/jQuery.png');
     background-size: 200px;
     height: 78px;
     background-repeat: no-repeat;
@@ -336,7 +336,7 @@ h2 {
 }
 
 .good-at-other--npm {
-    background-image: url(../images/npm.png);
+    background-image: url('../images/Npm.png');
     background-size: 135px;
     height: 78px;
     background-repeat: no-repeat;
