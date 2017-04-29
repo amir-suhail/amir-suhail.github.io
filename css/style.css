@@ -1,7 +1,16 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
 body {
-  font-family: monospace;
-  background-color: #F6F7F2;
+  font-family: 'Montserrat', sans-serif ;
   font-size: 16px;
+  background-color: #fff;
+}
+
+.alternate-bg {
+    background-color: #eee;
 }
 
 a {
@@ -57,10 +66,6 @@ a:hover {
   padding-top: 10px;
 }
 
-.seperator {
-  border-bottom: solid #ffffff;
-}
-
 .vertical--seperator {
   border-right: solid #ffffff 2px;
 }
@@ -112,8 +117,19 @@ h2 {
 }
 
 .about-me {
-  margin-top: 30px;
-  margin-bottom: 45px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me h1{
+    font-weight: 700;
+}
+
+.about-me h3 {
+    font-weight: 600;
 }
 
 .show-mobile-navigator {
@@ -144,6 +160,11 @@ h2 {
 .block-padding {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.block-padding h2 {
+    text-align: center;
+    font-weight: 700;
 }
 
 .height--175 {
@@ -182,6 +203,50 @@ h2 {
   color: green;
 }
 
+.good-at-primary {
+    height: 15rem;
+    width: 100%;
+}
+
+.good-at-primary--angular {
+    background-image: url('../images/angularjs.png');
+    background-repeat: no-repeat;
+    background-position: -21px -20px;
+    width: 14rem;
+    background-size: 17.5rem;
+}
+
+.good-at-primary--html5 {
+    background-image: url(../images/html5.png);
+    background-repeat: no-repeat;
+    background-position: -3px 1px;
+    width: 14rem;
+    background-size: 14rem;
+}
+
+.good-at-primary--css3 {
+    background-image: url(../images/css3.png);
+    background-repeat: no-repeat;
+    background-position: -21px -16px;
+    width: 14rem;
+    background-size: 17.5rem;
+}
+
+.good-at-primary--sass {
+    background-image: url(../images/sass.png);
+    background-repeat: no-repeat;
+    background-position: -8px 0px;
+    width: 14rem;
+    background-size: 15rem;
+}
+
+.center-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /*overrides*/
 
 .glyphicon-menu-hamburger {
@@ -210,8 +275,7 @@ and (orientation: portrait) {
   }
 
   .about-me {
-    height: 65vh;
-    margin-top: 25vh;
+    height: 92vh;
   }
 
   .my-img {
@@ -249,8 +313,7 @@ and (orientation: landscape) {
   }
 
   .about-me {
-    height: 62vh;
-    margin-top: 20vh;
+    height: 90vh;
   }
 
   .show-mobile-navigator {
