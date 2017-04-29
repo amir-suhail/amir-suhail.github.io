@@ -67,7 +67,7 @@ a:hover {
 }
 
 .vertical--seperator {
-  border-right: solid #ffffff 2px;
+  border-right: solid #ededed 2px;
 }
 
 .good-at-image {
@@ -107,13 +107,15 @@ h2 {
 }
 
 .my-img {
-  height: 200px;
-  width: 200px;
-  display: inline-block;
-  border-radius: 100%;
-  border: solid 10px;
-  background-image: url('../images/amir.png');
-  background-size: cover;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    border-radius: 100%;
+    border: solid 10px;
+    background-image: url(../images/IMG_8855.jpg);
+    background-size: 134%;
+    background-position: -32px;
+    background-repeat: no-repeat;
 }
 
 .about-me {
@@ -159,10 +161,11 @@ h2 {
 
 .block-padding {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .block-padding h2 {
+    margin-top: 40px;
     text-align: center;
     font-weight: 700;
 }
@@ -213,6 +216,10 @@ h2 {
 .margin--top--30 {
     margin-top: 30px;
 }
+
+.margin--bottom--20 {
+    margin-bottom: 20px;
+}
 .margin--bottom--60 {
   margin-bottom: 8vh;
 }
@@ -233,8 +240,30 @@ h2 {
   color: red;
 }
 
+.color--red p {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px;
+    justify-content: flex-start;
+}
+
+.color--red p i {
+    margin: 0 2px;
+}
+
 .color--green {
   color: green;
+}
+
+.color--green p {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px;
+    justify-content: flex-end;
+}
+
+.color--green p i {
+    margin: 0 2px;
 }
 
 .good-at-primary {
