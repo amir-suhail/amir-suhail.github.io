@@ -9,6 +9,19 @@ body {
   background-color: #fff;
 }
 
+.fullscreen-bg__video {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.about-me .t-caret {
+    display: none;
+}
+
 .alternate-bg {
     background-color: #eee;
 }
@@ -107,6 +120,7 @@ h2 {
 }
 
 .my-img {
+    z-index: 1;
     height: 200px;
     width: 200px;
     display: inline-block;
@@ -119,7 +133,7 @@ h2 {
 }
 
 .about-me {
-  height: 90vh;
+  height: 90.5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -446,8 +460,13 @@ and (orientation: portrait) {
   }
 
   .my-img {
+    z-index: 1;
     height: 500px;
     width: 500px;
+  }
+
+  .overflow-hidden {
+      overflow: hidden;
   }
 
   .reach-me {
