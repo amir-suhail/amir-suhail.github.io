@@ -9,12 +9,24 @@ var idArray = ["goodAtBlock", "doneBlock", "likeBlock", "reachBlock"];
 
 $(window).on('load', function() {
     $('#t').t();
-  $(this).impulse();
+    $(this).impulse();
 });
 
 $('#t').t({
   speed:50,
   speed_vary:true
+});
+
+$("a").on('click', function(event) {
+    if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+        window.location.hash = hash;
+        });
+    }
 });
 
 window.onscroll = function (e) {
