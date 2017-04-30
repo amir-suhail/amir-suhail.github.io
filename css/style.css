@@ -9,6 +9,10 @@ body {
   background-color: #fff;
 }
 
+.about-me .t-caret {
+    display: none;
+}
+
 .alternate-bg {
     background-color: #eee;
 }

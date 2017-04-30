@@ -7,6 +7,16 @@ var isSideMenuActive;
 var aboutBlockHeight;
 var idArray = ["goodAtBlock", "doneBlock", "likeBlock", "reachBlock"];
 
+$(window).on('load', function() {
+    $('#t').t();
+  $(this).impulse();
+});
+
+$('#t').t({
+  speed:50,
+  speed_vary:true
+});
+
 window.onscroll = function (e) {
   aboutBlockHeight = document.getElementById('aboutBlock').offsetHeight - 5;
   windowHeight = window.scrollY;
