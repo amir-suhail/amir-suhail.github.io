@@ -8,6 +8,7 @@ var aboutBlockHeight;
 var idArray = ["goodAtBlock", "doneBlock", "likeBlock", "reachBlock"];
 
 $(window).on('load', function() {
+    console.log('loaded');
     $('#t').t();
     $(this).impulse();
 });
