@@ -9,6 +9,33 @@ body {
   background-color: #fff;
 }
 
+.about-bg {
+    background-color: #3c3c3c;
+    background-image: url('../images/amir.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5%;
+    color: #000;
+    text-shadow: 0 0 12px #fff;
+}
+
+.about-bg .show-desktop-navigator {
+    text-shadow: none;
+}
+
+.about-bg h1 {
+    font-size: 70px;
+}
+
+.about-bg h3 {
+    font-size: 45px;
+}
+
+.about-bg p {
+    font-size: 22px;
+}
+
 .fullscreen-bg__video {
     position: absolute;
     overflow: hidden;
@@ -55,8 +82,8 @@ a:hover {
   color: #000;
 }
 
-.active-about {
-  background-color: #3D8EB9;
+.active-about a {
+  border-bottom: solid 3px #fff;
 }
 
 #likes i {
@@ -99,6 +126,11 @@ a:hover {
 .bg-flat-dark-blue {
   background-color: #00587A;
   color: #FEFEFE;
+}
+
+.bg-flat-grey {
+    background-color: #3c3c3c;
+    color: #FEFEFE;
 }
 
 .reach-me {
