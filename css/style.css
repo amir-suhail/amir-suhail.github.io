@@ -9,19 +9,37 @@ body {
   background-color: #fff;
 }
 
+a:active, a:visited {
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 .about-bg {
     background-color: #3c3c3c;
-    background-image: url('../images/amir-suhail.JPG');
+    background-image: url('../images/amir-suhail.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 5%;
-    color: #000;
-    text-shadow: 0 0 12px #fff;
+    color: #ffffff;
+    background-attachment: fixed;
+}
+
+.about-bg h1, .about-bg h3 {
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+}
+
+.about-bg p {
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
 }
 
 .about-bg .show-desktop-navigator {
-    text-shadow: none;
+    font-weight: 600;
 }
 
 .about-bg h1 {
@@ -29,11 +47,7 @@ body {
 }
 
 .about-bg h3 {
-    font-size: 45px;
-}
-
-.about-bg p {
-    font-size: 22px;
+    font-size: 47px;
 }
 
 .fullscreen-bg__video {
@@ -464,6 +478,11 @@ h2 {
 
 .glyphicon-menu-hamburger {
   font-size: 4vh;
+}
+
+.stack-overflow {
+    border: solid 5px #fff;
+    border-radius: 12px;
 }
 
 
