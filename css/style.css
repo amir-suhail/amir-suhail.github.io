@@ -252,7 +252,6 @@ h2 {
     font-size: 1.2rem;
     position: absolute;
     top: -15px;
-    left: 43%;
     padding: 5px;
     border: solid 1px #999;
     border-radius: 6px;
@@ -488,7 +487,7 @@ h2 {
 
 /* media query */
 @media only screen
-and (max-device-width : 1024px)
+and (max-device-width : 1023px)
 and (orientation: portrait) {
   body {
     font-size: 28px;
@@ -533,17 +532,29 @@ and (orientation: portrait) {
     height: 8vh;
   }
 
+  .about-bg p {
+      font-size: 30px;
+  }
+
+  .about-bg h3 {
+      font-size: 60px;
+  }
+
+  .about-bg h1 {
+      font-size: 90px;
+  }
+
 }
 
 @media only screen
-and (min-device-width : 1025px) {
+and (min-device-width : 1024px) {
   .show-mobile-navigator {
     display: none;
   }
 }
 
 @media only screen
-and (max-device-width : 1024px)
+and (max-device-width : 1023px)
 and (orientation: landscape) {
   .show-desktop-navigator {
     display: none;
@@ -569,4 +580,11 @@ and (orientation: landscape) {
     height: 10vh;
   }
 
+}
+
+@media only screen
+and (max-device-width : 1023px) {
+    .about-bg {
+        background-attachment: scroll;
+    }
 }
