@@ -9,6 +9,47 @@ body {
   background-color: #fff;
 }
 
+a:active, a:visited {
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.about-bg {
+    background-color: #3c3c3c;
+    background-image: url('../images/amir-suhail.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5%;
+    color: #ffffff;
+    background-attachment: fixed;
+}
+
+.about-bg h1, .about-bg h3 {
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+}
+
+.about-bg p {
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
+}
+
+.about-bg .show-desktop-navigator {
+    font-weight: 600;
+}
+
+.about-bg h1 {
+    font-size: 70px;
+}
+
+.about-bg h3 {
+    font-size: 47px;
+}
+
 .fullscreen-bg__video {
     position: absolute;
     overflow: hidden;
@@ -55,8 +96,8 @@ a:hover {
   color: #000;
 }
 
-.active-about {
-  background-color: #3D8EB9;
+.active-about a {
+  border-bottom: solid 3px #fff;
 }
 
 #likes i {
@@ -101,6 +142,11 @@ a:hover {
   color: #FEFEFE;
 }
 
+.bg-flat-grey {
+    background-color: #3c3c3c;
+    color: #FEFEFE;
+}
+
 .reach-me {
   margin-top: 20px;
   height: 100px;
@@ -133,7 +179,7 @@ h2 {
 }
 
 .about-me {
-  height: 90.5vh;
+  height: calc(100vh - 62px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,8 +215,7 @@ h2 {
 }
 
 .navigator--padding {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 .block-padding {
@@ -206,7 +251,6 @@ h2 {
     font-size: 1.2rem;
     position: absolute;
     top: -15px;
-    left: 43%;
     padding: 5px;
     border: solid 1px #999;
     border-radius: 6px;
@@ -434,10 +478,15 @@ h2 {
   font-size: 4vh;
 }
 
+.stack-overflow {
+    border: solid 5px #fff;
+    border-radius: 12px;
+}
+
 
 /* media query */
 @media only screen
-and (max-device-width : 1024px)
+and (max-device-width : 1023px)
 and (orientation: portrait) {
   body {
     font-size: 28px;
@@ -482,17 +531,29 @@ and (orientation: portrait) {
     height: 8vh;
   }
 
+  .about-bg p {
+      font-size: 30px;
+  }
+
+  .about-bg h3 {
+      font-size: 60px;
+  }
+
+  .about-bg h1 {
+      font-size: 90px;
+  }
+
 }
 
 @media only screen
-and (min-device-width : 1025px) {
+and (min-device-width : 1024px) {
   .show-mobile-navigator {
     display: none;
   }
 }
 
 @media only screen
-and (max-device-width : 1024px)
+and (max-device-width : 1023px)
 and (orientation: landscape) {
   .show-desktop-navigator {
     display: none;
@@ -518,4 +579,11 @@ and (orientation: landscape) {
     height: 10vh;
   }
 
+}
+
+@media only screen
+and (max-device-width : 1023px) {
+    .about-bg {
+        background-attachment: scroll;
+    }
 }

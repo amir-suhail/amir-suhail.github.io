@@ -7,17 +7,6 @@ var isSideMenuActive;
 var aboutBlockHeight;
 var idArray = ["goodAtBlock", "doneBlock", "likeBlock", "reachBlock"];
 
-$(window).on('load', function() {
-    console.log('loaded');
-    $('#t').t();
-    $(this).impulse();
-});
-
-$('#t').t({
-  speed:50,
-  speed_vary:true
-});
-
 $("a").on('click', function(event) {
     if (this.hash !== "") {
         event.preventDefault();
@@ -73,15 +62,19 @@ function addHeader () {
   document.getElementById("aboutBlock").classList.add("margin--bottom--60");
   document.getElementById("navigator").classList.add("fixed-header");
   document.getElementById("mobileHeader").classList.add("fixed-header");
+  document.getElementById("navigator").classList.add("bg-flat-grey");
   document.getElementById("headerText").innerHTML = "Amir Suhail";
   var selectedElem = document.getElementById("navigator").children[0];
   selectedElem.classList.remove("active-about");
+  //bg-flat-dark-blue
 }
 
 function removeHeader () {
   document.getElementById("mobileHeader").classList.remove("fixed-header");
   document.getElementById("navigator").classList.remove("fixed-header");
   document.getElementById("aboutBlock").classList.remove("margin--bottom--60");
+  document.getElementById("navigator").classList.remove("bg-flat-grey");
+
   document.getElementById("headerText").innerHTML = "";
   removeActive();
   var selectedElem = document.getElementById("navigator").children[0];
