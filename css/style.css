@@ -179,7 +179,7 @@ h2 {
 }
 
 .about-me {
-  height: 90.5vh;
+  height: calc(100vh - 62px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -215,8 +215,7 @@ h2 {
 }
 
 .navigator--padding {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 .block-padding {
