@@ -7,6 +7,130 @@ var isSideMenuActive;
 var aboutBlockHeight;
 var idArray = ["goodAtBlock", "doneBlock", "likeBlock", "reachBlock"];
 
+$(document).ready(function () {
+    ScrollReveal().reveal('.about-me', {
+        origin: 'top',
+        duration: 1500,
+        distance:'200px'
+    });
+
+    ScrollReveal().reveal('.heading', {
+        origin: 'top',
+        duration: 1500,
+        distance:'75px'
+    });
+
+    ScrollReveal().reveal('.competencies', {
+        origin: 'right',
+        duration: 1000,
+        distance:'300px',
+        viewFactor: 0.2
+    });
+
+    ScrollReveal().reveal('.project-from-left', {
+        origin: 'left',
+        duration: 1000,
+        distance:'300px',
+        viewFactor: 0.2
+    });
+
+    ScrollReveal().reveal('.project-from-right', {
+        origin: 'right',
+        duration: 1000,
+        distance:'300px',
+        viewFactor: 0.2
+    });
+
+    ScrollReveal().reveal('.likes', {
+        origin: 'left',
+        duration: 1500,
+        distance:'300px'
+    });
+
+    ScrollReveal().reveal('.like-1', {
+        origin: 'left',
+        duration: 1500,
+        distance:'300px',
+        delay: 60
+    });
+
+    ScrollReveal().reveal('.like-2', {
+        origin: 'left',
+        duration: 1500,
+        distance:'300px',
+        delay: 120
+    });
+
+    ScrollReveal().reveal('.like-3', {
+        origin: 'left',
+        duration: 1500,
+        distance:'300px',
+        delay: 180
+    });
+
+    ScrollReveal().reveal('.like-4', {
+        origin: 'left',
+        duration: 1500,
+        distance:'300px',
+        delay: 240
+    });
+
+    ScrollReveal().reveal('.like-5', {
+        origin: 'left',
+        duration: 1500,
+        distance:'300px',
+        delay: 300
+    });
+
+    ScrollReveal().reveal('.like-6', {
+        origin: 'left',
+        duration: 1500,
+        distance:'300px',
+        delay: 360
+    });
+
+    ScrollReveal().reveal('.like-7', {
+        origin: 'left',
+        duration: 1500,
+        distance:'300px',
+        delay: 420
+    });
+
+    ScrollReveal().reveal('.dislikes', {
+        origin: 'right',
+        duration: 1500,
+        distance:'300px'
+    });
+
+    ScrollReveal().reveal('.dislike-1', {
+        origin: 'right',
+        duration: 1500,
+        distance:'300px',
+        delay: 60
+    });
+
+    ScrollReveal().reveal('.dislike-2', {
+        origin: 'right',
+        duration: 1500,
+        distance:'300px',
+        delay: 120
+    });
+
+    ScrollReveal().reveal('.dislike-3', {
+        origin: 'right',
+        duration: 1500,
+        distance:'300px',
+        delay: 180
+    });
+
+    ScrollReveal().reveal('.reach-me-reveal', {
+        origin: 'bottom',
+        duration: 1500,
+        distance:'200px'
+    });
+
+});
+
 $("a").on('click', function(event) {
     if (this.hash !== "") {
         event.preventDefault();
