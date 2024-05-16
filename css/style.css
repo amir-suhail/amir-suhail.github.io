@@ -24,7 +24,7 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 100%;
-    background-position-y: 5%;
+    background-position-y: 25%;
     color: #ffffff;
     background-attachment: fixed;
 }
@@ -330,8 +330,8 @@ h2 {
     width: 100%;
 }
 
-.good-at-primary--angular {
-    background-image: url('../images/angularjs.png');
+.good-at-primary--js {
+    background-image: url('../images/JavaScript.png');
     background-repeat: no-repeat;
     background-position: -21px -20px;
     width: 14rem;
@@ -354,12 +354,12 @@ h2 {
     background-size: 17.5rem;
 }
 
-.good-at-primary--sass {
-    background-image: url(../images/sass.png);
+.good-at-primary--salesforce {
+    background-image: url(../images/salesforce.png);
     background-repeat: no-repeat;
-    background-position: -8px 0px;
+    background-position: center;
     width: 14rem;
-    background-size: 15rem;
+    background-size: 135%;
 }
 
 .good-at-other--ionic {
@@ -466,6 +466,54 @@ h2 {
     background-position: 7px -4px;
 }
 
+.good-at-other--java {
+  background-image: url(../images/Java.png);
+  background-size: 185px;
+  height: 78px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.good-at-other--angular {
+  background-image: url(../images/angular.png);
+  background-size: 185px;
+  height: 78px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.good-at-other--lwc {
+  background-image: url(../images/lwc.jpeg);
+  background-size: 185px;
+  height: 78px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.good-at-other--ui5 {
+  background-image: url(../images/ui5.png);
+  background-size: 185px;
+  height: 78px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.good-at-other--sql {
+  background-image: url(../images/sql.png);
+  
+  background-size: 165px;
+  height: 78px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.good-at-other--sap {
+  background-image: url(../images/SAP.png);
+  background-size: 185px;
+  height: 78px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .center-box {
     display: flex;
     flex-direction: column;
