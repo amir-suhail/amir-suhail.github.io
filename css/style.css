@@ -634,5 +634,6 @@ and (orientation: landscape) {
 and (max-device-width : 1023px) {
     .about-bg {
         background-attachment: scroll;
+        background-position-x: 50%;
     }
 }
